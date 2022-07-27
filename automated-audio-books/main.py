@@ -9,8 +9,9 @@ def tts_text(text):
 
     # Build the voice request, select the language code ("en-US") and the ssml
     # voice gender ("neutral")
+    # We can use wavenet voices using this parameter, name='en-GB-Wavenet-D'
     voice = texttospeech.VoiceSelectionParams(
-        language_code="en-GB", ssml_gender=texttospeech.SsmlVoiceGender.NEUTRAL
+        language_code="en-GB", ssml_gender=texttospeech.SsmlVoiceGender.Male
     )
 
     # Select the type of audio file you want returned
